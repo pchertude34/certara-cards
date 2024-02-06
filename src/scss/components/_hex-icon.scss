@@ -1,0 +1,12 @@
+.hex-icon {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-icon-brand;
+    font-size: 3rem;
+  }
+}

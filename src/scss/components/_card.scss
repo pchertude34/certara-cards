@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  min-width: 350px;
+  background-color: $color-bg-static-subtlest;
+  border: 1px solid $color-border-static-neutral;
+  border-radius: $border-radius-md;
+
+  &__header {
+    text-align: center;
+    padding: 1rem 1rem 0.5rem 1rem;
+    border-top-left-radius: $border-radius-md;
+    border-top-right-radius: $border-radius-md;
+  }
+
+  &__body {
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+
+  &__badge {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    background-color: $color-bg-static-warning;
+    color: $color-text-warning;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 0 $border-radius-md 0 $border-radius-md;
+  }
+
+  &__text-title {
+    color: $color-text-primary;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  &__text-body {
+    color: $color-text-primary;
+    font-size: 1rem;
+    margin: 0;
+  }
+}

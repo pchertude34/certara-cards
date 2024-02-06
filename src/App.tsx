@@ -1,4 +1,4 @@
-import './index.scss';
+import './scss/main.scss';
 
 function App() {
   return (
@@ -12,17 +12,17 @@ function App() {
             <div className="card__badge">Test badge</div>
             <h2 className="card__text-title">This is a heading</h2>
             <p>This is some cool text</p>
-            <button className="btn">Click me</button>
+            <button className="btn btn-primary">Click me</button>
           </div>
         </div>
         <div className="card">
           <div className="card__header">
-            <div className="hex">
+            <div className="hex-icon">
               <embed src="src/assets/Hexagon.svg" type="image/svg+xml" />
               <embed
                 src="src/assets/file-import-light.svg"
                 type="image/svg+xml"
-                className="hex__icon"
+                className="hex-icon__icon"
               />
             </div>
             <h2 className="card__text-title">Import File</h2>
@@ -34,7 +34,7 @@ function App() {
               qui, quas itaque libero sed quisquam fuga expedita, corrupti dignissimos sit facilis!
               Perspiciatis tempore voluptates aliquid porro? Rerum!
             </p>
-            <button className="btn">Click me</button>
+            <button className="btn btn-primary">Click me</button>
           </div>
         </div>
         <div className="card">
@@ -43,7 +43,7 @@ function App() {
             <div className="card__badge">Test badge</div>
             <h2 className="card__text-title">This is a heading</h2>
             <p>This is some cool text</p>
-            <button className="btn">Click me</button>
+            <button className="btn btn-primary">Click me</button>
           </div>
         </div>
       </div>
