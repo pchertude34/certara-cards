@@ -55,7 +55,10 @@ function App() {
       </div>
       <hr className="divider" />
       <p className="text text-center">
-        or, <a className="link">start with a blank template</a>
+        or,{' '}
+        <a className="link" href="#">
+          start with a blank template
+        </a>
       </p>
     </div>
   );
