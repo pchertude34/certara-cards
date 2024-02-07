@@ -7,7 +7,7 @@ import { Divider } from './components/library/Divider/Divider';
 function App() {
   return (
     <div className="container">
-      <h1 className="heading text-center">Add a New Object</h1>
+      <h1 className="heading--lg text-center">Add a New Object</h1>
       <p className="text text-center mb-3">
         Choose an option below. You can always change your mind or make edits later.
       </p>
