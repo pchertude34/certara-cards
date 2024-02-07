@@ -1,4 +1,5 @@
 import React from 'react';
+import HexagonIcon from '../icons/HexagonIcon';
 
 type CardHeaderProps = {
   icon?: React.ReactNode;
@@ -12,7 +13,7 @@ export function CardHeader(props: CardHeaderProps) {
     <div className="card__header">
       {icon && (
         <div className="hex-icon mb-3">
-          <img src="src/assets/Hexagon.svg" alt="hexagon" />
+          <HexagonIcon />
           <span className="hex-icon__icon">{icon}</span>
         </div>
       )}
