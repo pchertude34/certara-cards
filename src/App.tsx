@@ -1,11 +1,6 @@
 import { Card } from './components/Card/Card';
 import { CardHeader } from './components/Card/CardHeader';
 import { CardBody } from './components/Card/CardBody';
-import CheckIcon from './assets/check-light.svg?react';
-import CopyIcon from './assets/copy-light.svg?react';
-import ImportIcon from './assets/file-import-light.svg?react';
-
-import './scss/main.scss';
 
 function App() {
   return (
@@ -16,7 +11,10 @@ function App() {
       </p>
       <div className="grid">
         <Card tag="Time-saver">
-          <CardHeader title="From Scanned Data" icon={<CheckIcon />} />
+          <CardHeader
+            title="From Scanned Data"
+            icon={<img src="src/assets/check-light.svg" alt="check icon" />}
+          />
           <CardBody>
             <p className="card__text-body mb-3">
               Lorem ipsum dolor sit amet euismod porta odio in, <b>consectetur adipiscing elit</b>.
@@ -29,7 +27,10 @@ function App() {
           </CardBody>
         </Card>
         <Card>
-          <CardHeader title="Import File" icon={<ImportIcon />} />
+          <CardHeader
+            title="Import File"
+            icon={<img src="src/assets/file-import-light.svg" alt="file icon" />}
+          />
           <CardBody>
             <p className="card__text-body mb-3">
               Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin magna libero,
@@ -42,7 +43,10 @@ function App() {
           </CardBody>
         </Card>
         <Card>
-          <CardHeader title="Copy From" icon={<CopyIcon />} />
+          <CardHeader
+            title="Copy From"
+            icon={<img src="src/assets/copy-light.svg" alt="copy icon" />}
+          />
           <CardBody>
             <p className="card__text-body mb-3">
               Maecenas luctus ex nunc, semper feugiat odio convallis a. Phasellus lorem ipsum,
