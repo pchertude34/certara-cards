@@ -1,5 +1,7 @@
 .card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-width: 350px;
   background-color: $color-bg-static-subtlest;
   border: 1px solid $color-border-static-neutral;
@@ -13,6 +15,9 @@
   }
 
   &__body {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
     padding: 0.5rem 1rem 1rem 1rem;
   }
 
@@ -30,11 +35,14 @@
   &__text-title {
     color: $color-text-primary;
     font-size: 1.5rem;
+    font-weight: 500;
     margin: 0;
   }
   &__text-body {
     color: $color-text-primary;
     font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
     margin: 0;
   }
 }

@@ -2,9 +2,13 @@
 @import 'abstracts/utils';
 @import 'components/card';
 @import 'components/button';
+@import 'components/link';
 @import 'components/hex-icon';
+@import 'components/divider';
 @import 'layouts/container';
 @import 'layouts/grid';
+@import 'layouts/button-group';
+@import 'typography/typography';
 
 body {
   font-family: 'Roboto', sans-serif;

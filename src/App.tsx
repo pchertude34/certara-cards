@@ -1,52 +1,64 @@
+import { Card } from './components/Card/Card';
+import { CardHeader } from './components/Card/CardHeader';
+import { CardBody } from './components/Card/CardBody';
+import CheckIcon from './assets/check-light.svg?react';
+import CopyIcon from './assets/copy-light.svg?react';
+import ImportIcon from './assets/file-import-light.svg?react';
+
 import './scss/main.scss';
 
 function App() {
   return (
     <div className="container">
-      <h1>Hello, world!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <h1 className="heading text-center">Add a New Object</h1>
+      <p className="text text-center mb-3">
+        Choose an option below. You can always change your mind or make edits later.
+      </p>
       <div className="grid">
-        <div className="card">
-          <div className="card__header">Hello</div>
-          <div className="card__body">
-            <div className="card__badge">Test badge</div>
-            <h2 className="card__text-title">This is a heading</h2>
-            <p>This is some cool text</p>
-            <button className="btn btn-primary">Click me</button>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card__header">
-            <div className="hex-icon">
-              <embed src="src/assets/Hexagon.svg" type="image/svg+xml" />
-              <embed
-                src="src/assets/file-import-light.svg"
-                type="image/svg+xml"
-                className="hex-icon__icon"
-              />
-            </div>
-            <h2 className="card__text-title">Import File</h2>
-          </div>
-          <div className="card__body">
-            <div className="card__badge">Test badge</div>
-            <p className="card__text-body">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptatum saepe natus
-              qui, quas itaque libero sed quisquam fuga expedita, corrupti dignissimos sit facilis!
-              Perspiciatis tempore voluptates aliquid porro? Rerum!
+        <Card tag="Time-saver">
+          <CardHeader title="From Scanned Data" icon={<CheckIcon />} />
+          <CardBody>
+            <p className="card__text-body mb-3">
+              Lorem ipsum dolor sit amet euismod porta odio in, <b>consectetur adipiscing elit</b>.
+              Nulla convallis tortor dolor, quis luctus lacus varius eget ultrices finibus elit at
+              congue.
             </p>
-            <button className="btn btn-primary">Click me</button>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card__header">Hello</div>
-          <div className="card__body">
-            <div className="card__badge">Test badge</div>
-            <h2 className="card__text-title">This is a heading</h2>
-            <p>This is some cool text</p>
-            <button className="btn btn-primary">Click me</button>
-          </div>
-        </div>
+            <div className="button-group mt-auto">
+              <button className="btn btn-primary">Scan data</button>
+            </div>
+          </CardBody>
+        </Card>
+        <Card>
+          <CardHeader title="Import File" icon={<ImportIcon />} />
+          <CardBody>
+            <p className="card__text-body mb-3">
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin magna libero,
+              commodo ac vulputate vitae.
+            </p>
+            <div className="button-group mt-auto">
+              <button className="btn btn-primary mr-2">Import XLSX</button>
+              <button className="btn btn-primary">Import XLM</button>
+            </div>
+          </CardBody>
+        </Card>
+        <Card>
+          <CardHeader title="Copy From" icon={<CopyIcon />} />
+          <CardBody>
+            <p className="card__text-body mb-3">
+              Maecenas luctus ex nunc, semper feugiat odio convallis a. Phasellus lorem ipsum,
+              faucibus id arcu molestie.
+            </p>
+            <div className="button-group mt-auto">
+              <button className="btn btn-primary mr-2">Copy Object</button>
+              <button className="btn btn-primary">Copy Other Object</button>
+            </div>
+          </CardBody>
+        </Card>
       </div>
+      <hr className="divider" />
+      <p className="text text-center">
+        or, <a className="link">start with a blank template</a>
+      </p>
     </div>
   );
 }
